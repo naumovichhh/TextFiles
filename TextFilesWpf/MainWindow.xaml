@@ -1,0 +1,17 @@
+﻿<Window x:Class="TextFilesWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextFilesWpf"
+        mc:Ignorable="d"
+        Title="Текстовые файлы" SizeToContent="WidthAndHeight" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid Height="300" Width="400">
+        <Button Name="buttonGenerate" Width="100" Height="50" Margin="150,40,150,194"
+                Content="Генерировать" Click="buttonGenerate_ClickAsync"/>
+        <Button Name="buttonUnite" Width="100" Height="50"
+                Content="Объединить" Margin="150,117,150,117" Click="buttonUnite_ClickAsync"/>
+        <Button Name="buttonExport" Width="100" Height="50"
+                Content="Экспортировать" Margin="150,194,150,40" Click="buttonExport_ClickAsync"/>
+    </Grid>
+</Window>
